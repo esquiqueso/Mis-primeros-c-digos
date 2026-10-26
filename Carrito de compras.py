@@ -63,7 +63,7 @@ for n in carrito.keys():
 print(f'''
 {'-'* 45}''')
 for producto, cantidad in carrito.items():
-    print(f'{producto:<18} {'-':<1} x{cantidad:>2} {'|':>8} ${catalogo[producto.title().strip()]['precio']} ')
+    print(f'{producto:<18} {'-':<1} x{cantidad:>2} {'|':>14} ${catalogo[producto.title().strip()]['precio']} ')
 print(f'{'-'* 45}')
 print(f'{f'Total a pagar: {f'${sum(lista_de_cantidades)}':<3}':>45}')
 
